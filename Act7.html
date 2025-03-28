@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Lectoescritura - Colores</title>
+    <link rel="stylesheet" href="Act7.css">
+</head>
+<body>
+    <!-- Botón para volver a la página Actividades.html -->
+    <a href="Actividades.html">
+        <button class="back-button">Volver a Actividades</button>
+    </a>
+
+    <h1>Ejercicio de Lectoescritura - Colores</h1>
+
+    <!-- Contenedor para las preguntas y la imagen centrada -->
+    <div class="exercise">
+        <div class="columns">
+            <div class="column">
+                <p>El cielo es de color:</p>
+                <select id="answer1">
+                    <option value="">Selecciona...</option>
+                    <option value="blue">Azul</option>
+                    <option value="red">Rojo</option>
+                    <option value="green">Verde</option>
+                </select>
+            </div>
+
+            <div class="column">
+                <p>Las fresas son de color:</p>
+                <select id="answer2">
+                    <option value="">Selecciona...</option>
+                    <option value="red">Rojo</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="green">Verde</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Imagen centrada entre las respuestas -->
+        <div class="image-container">
+            <img src="varios.jpg" alt="Colores" class="center-image">
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <p>La hierba es de color:</p>
+                <select id="answer3">
+                    <option value="">Selecciona...</option>
+                    <option value="green">Verde</option>
+                    <option value="blue">Azul</option>
+                    <option value="red">Rojo</option>
+                </select>
+            </div>
+
+            <div class="column">
+                <p>El sol es de color:</p>
+                <select id="answer4">
+                    <option value="">Selecciona...</option>
+                    <option value="yellow">Amarillo</option>
+                    <option value="orange">Naranja</option>
+                    <option value="purple">Morado</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="columns">
+            <div class="column">
+                <p>El mar es de color:</p>
+                <select id="answer5">
+                    <option value="">Selecciona...</option>
+                    <option value="blue">Azul</option>
+                    <option value="pink">Rosa</option>
+                    <option value="black">Negro</option>
+                </select>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Comprobar Respuestas</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="Act7.js"></script>
+</body>
+</html>

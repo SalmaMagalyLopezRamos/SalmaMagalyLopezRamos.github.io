@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("img/fondo.jpg"); /* Cambia la ruta de la imagen */
+    background-size: cover; /* Hace que cubra toda la pantalla */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-regreso {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-regreso:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.exercise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.dropzone {
+    display: inline-block;
+    min-width: 60px;
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.options {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.draggable {
+    background: lightblue;
+    padding: 10px;
+    font-size: 18px;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}

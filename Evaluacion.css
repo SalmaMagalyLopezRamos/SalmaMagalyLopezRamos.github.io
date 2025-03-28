@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('fondoevaluacion.jpg'); /* Fondo de la página */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se mueva al hacer scroll */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Evita el desbordamiento de la página */
+}
+
+.container {
+    text-align: center;
+    width: 90%; /* Ajustamos el contenedor para que no ocupe toda la pantalla */
+    max-width: 600px;
+    overflow-y: auto; /* Permite el desplazamiento vertical cuando es necesario */
+    height: 90vh; /* Ajusta la altura del contenedor */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgba(147, 237, 255, 0.8); /* Fondo blanco semi-transparente para mejorar la visibilidad del texto */
+}
+
+.image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.question p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* ... el resto de tu CSS previo ... */
+
+.completar input {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.colores button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.colores button:hover {
+    background-color: #f0f0f0;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+/* ... el resto de tu CSS previo ... */
+
+/* Cambiar color al seleccionar una opción */
+button.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+select option:checked {
+    background-color: #4CAF50;
+    color: white;
+}

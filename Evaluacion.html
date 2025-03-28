@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Lectoescritura</title>
+    <link rel="stylesheet" href="Evaluacion.css">
+</head>
+<body>
+    <!-- Botón para volver a la página de inicio -->
+    <button onclick="window.location.href='index.html';" style="position: fixed; top: 10px; left: 10px; padding: 10px 20px; background-color: #2f37c4; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Volver a Inicio
+    </button>
+
+    <div class="container">
+        <h1>Evaluacion de Lectoescritura</h1>
+
+        <!-- Ejercicio de colores -->
+        <h2>Ejercicio de Colores:</h2>
+        
+        <!-- Imagen relacionada con los colores -->
+        <img src="colores.jpg" alt="Imagen de colores" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        
+        <div class="colores">
+            <div class="question0">
+                <p>1. ¿De qué color es el cielo?</p>
+                <button onclick="saveColor('azul', 0)">Azul</button>
+                <button onclick="saveColor('rojo', 0)">Rojo</button>
+                <button onclick="saveColor('verde', 0)">Verde</button>
+            </div>
+
+            <div class="question1">
+                <p>2. ¿De qué color son las hojas de los árboles?</p>
+                <button onclick="saveColor('amarillo', 1)">Amarillo</button>
+                <button onclick="saveColor('verde', 1)">Verde</button>
+                <button onclick="saveColor('morado', 1)">Morado</button>
+            </div>
+        </div>
+
+        <!-- Ejercicio de verdadero o falso -->
+        <h2>Ejercicio de Verdadero o Falso:</h2>
+        
+        <!-- Imagen relacionada con verdadero o falso -->
+        <img src="nieve.jpg" alt="Imagen de verdadero o falso" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+        
+        <div class="questions">
+            <div class="question question0">
+                <p>1. Hay un muñeco de nieve</p>
+                <button onclick="saveAnswer(0, true)">Verdadero</button>
+                <button onclick="saveAnswer(0, false)">Falso</button>
+            </div>
+            <div class="question question1">
+                <p>2. Es primavera</p>
+                <button onclick="saveAnswer(1, false)">Falso</button>
+                <button onclick="saveAnswer(1, true)">Verdadero</button>
+            </div>
+            <div class="question question2">
+                <p>3. Está nevando</p>
+                <button onclick="saveAnswer(2, true)">Verdadero</button>
+                <button onclick="saveAnswer(2, false)">Falso</button>
+            </div>
+            <div class="question question3">
+                <p>4. El perro tiene el collar rojo</p>
+                <button onclick="saveAnswer(3, true)">Verdadero</button>
+                <button onclick="saveAnswer(3, false)">Falso</button>
+            </div>
+            <div class="question question4">
+                <p>5. Todos los niños llevan gorro</p>
+                <button onclick="saveAnswer(4, false)">Falso</button>
+                <button onclick="saveAnswer(4, true)">Verdadero</button>
+            </div>
+            <div class="question question5">
+                <p>6. Hay 2 bancas</p>
+                <button onclick="saveAnswer(5, true)">Verdadero</button>
+                <button onclick="saveAnswer(5, false)">Falso</button>
+            </div>
+            <div class="question question6">
+                <p>7. Todos los niños están sentados</p>
+                <button onclick="saveAnswer(6, false)">Falso</button>
+                <button onclick="saveAnswer(6, true)">Verdadero</button>
+            </div>
+            <div class="question question7">
+                <p>8. Hace mucho calor</p>
+                <button onclick="saveAnswer(7, false)">Falso</button>
+                <button onclick="saveAnswer(7, true)">Verdadero</button>
+            </div>
+            <div class="question question8">
+                <p>9. El muñeco de nieve lleva un gorro</p>
+                <button onclick="saveAnswer(8, true)">Verdadero</button>
+                <button onclick="saveAnswer(8, false)">Falso</button>
+            </div>
+            <div class="question question9">
+                <p>10. Una niña lleva gafas</p>
+                <button onclick="saveAnswer(9, true)">Verdadero</button>
+                <button onclick="saveAnswer(9, false)">Falso</button>
+            </div>
+        </div>
+
+        <!-- Ejercicio de completar oraciones -->
+        <h2>Ejercicio de Completar Oraciones:</h2>
+        <div class="completar">
+            <p>1. La ______ brilla en el cielo.</p>
+            <select id="oracion1">
+                <option value="luna">Luna</option>
+                <option value="sol">Sol</option>
+                <option value="estrella">Estrella</option>
+            </select>
+            
+            <p>2. El ______ está en el parque.</p>
+            <select id="oracion2">
+                <option value="arbol">Árbol</option>
+                <option value="gaviota">Gaviota</option>
+                <option value="coche">Coche</option>
+            </select>
+
+            <p>3. El ______ corre rápido.</p>
+            <select id="oracion3">
+                <option value="caracol">Caracol</option>
+                <option value="perro">Perro</option>
+                <option value="pajaro">Pájaro</option>
+            </select>
+
+            <p>4. La ______ está llena de frutas.</p>
+            <select id="oracion4">
+                <option value="canasta">Canasta</option>
+                <option value="television">Television</option>
+                <option value="playera">Playera</option>
+            </select>
+
+            <p>5. La ______ está en el jardín.</p>
+            <select id="oracion5">
+                <option value="flor">Flor</option>
+                <option value="banco">Banco</option>
+                <option value="juguete">Juguete</option>
+            </select>
+        </div>
+
+        <button onclick="calificar()">Calificar</button>
+        <h3 id="calificacion"></h3>
+    </div>
+
+    <script src="Evaluacion.js"></script>
+</body>
+</html>

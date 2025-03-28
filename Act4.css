@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background: url('Fondoact2.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: white;
+    position: relative; /* Añadido para permitir la posición del botón */
+}
+
+.btn-regreso {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-regreso:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: rgba(132, 226, 255, 0.9);
+    color: rgb(0, 0, 0);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 26px;
+}
+
+main {
+    background-color: rgba(132, 226, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.palabra-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.letra {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #ffcc00;
+    border-radius: 10px;
+    cursor: grab;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.letra:hover {
+    background-color: #ffdb4d;
+}
+
+.letra.dragging {
+    opacity: 0.5;
+}
+
+#mensaje {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #ffcc00;
+}
+
+#siguiente {
+    font-size: 24px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #2f19f7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#siguiente:hover {
+    background-color: #ff00b7;
+}

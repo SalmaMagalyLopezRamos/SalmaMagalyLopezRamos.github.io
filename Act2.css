@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('fondoact2.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Añadido para permitir la posición del botón */
+}
+
+.btn-regreso {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-regreso:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: rgba(142, 225, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+button {
+    background-color: #386bbe;
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

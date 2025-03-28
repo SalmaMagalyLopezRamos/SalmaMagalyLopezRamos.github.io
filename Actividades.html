@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos en Línea</title>
+    <link rel="stylesheet" href="Actividades.css">
+</head>
+<body>
+    <a href="index.html" class="back-arrow">&#8592; Volver</a>
+
+    <header>
+        <img src="bluey.jpg" alt="Juegos en Línea">
+        <h1>Juegos en línea</h1>
+        <p>Jugar y aprender con tus juegos favoritos. Descubre actividades interactivas para niños.</p>
+    </header>
+
+    <main>
+        <h2>Algunos preferidos para jugar:</h2>
+        <div class="games-grid">
+            <!-- Se generan las tarjetas de juego -->
+            <script>
+                const juegos = [
+                    { nombre: "Juego 1", imagen: "1.jpg", enlace: "Act1.html" },
+                    { nombre: "Juego 2", imagen: "2.jpg", enlace: "Act2.html" },
+                    { nombre: "Juego 3", imagen: "3.jpg", enlace: "Act3.html" },
+                    { nombre: "Juego 4", imagen: "4.jpg", enlace: "Act4.html" },
+                    { nombre: "Juego 5", imagen: "5.jpg", enlace: "Act5.html" },
+                    { nombre: "Juego 6", imagen: "6.jpg", enlace: "Act6.html" },
+                    { nombre: "Juego 7", imagen: "7.jpg", enlace: "Act7.html" },
+                    { nombre: "Juego 8", imagen: "8.jpg", enlace: "Act8.html" }
+                ];
+
+
+                
+
+                juegos.forEach(juego => {
+                    document.write(`
+                        <div class="game-card">
+                            <a href="${juego.enlace}">
+                                <img src="${juego.imagen}" alt="${juego.nombre}">
+                                <p>${juego.nombre}</p>
+                            </a>
+                        </div>
+                    `);
+                });
+            </script>
+        </div>
+    </main>
+    
+    <script src="Actividades.js"></script>
+</body>
+</html>
+
+

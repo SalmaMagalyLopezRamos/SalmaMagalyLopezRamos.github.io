@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('fondoact1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative; /* Añadido para permitir la posición del botón */
+}
+
+.btn-regreso {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #085cb6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-regreso:hover {
+    background-color: #0056b3;
+}
+
+header {
+    background-color: #1976D2;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#word-display {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+.letter-options button {
+    padding: 15px 30px;
+    font-size: 1.5em;
+    margin: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.letter-options button:hover {
+    background-color: #1976D2;
+}
+
+#feedback {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#next-button {
+    display: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#next-button:hover {
+    background-color: #388E3C;
+}

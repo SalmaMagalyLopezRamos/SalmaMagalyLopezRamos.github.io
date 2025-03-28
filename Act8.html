@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Lectoescritura</title>
+    <link rel="stylesheet" href="Act8.css">
+</head>
+<body>
+    <!-- Botón para volver a la página Actividades.html -->
+    <a href="Actividades.html">
+        <button class="back-button">Volver a Actividades</button>
+    </a>
+
+    <div class="container">
+        <h1>Ejercicio de Lectoescritura: Verdadero o Falso</h1>
+        <img src="parque.jpg" alt="Parque" class="image">
+        
+        <div class="questions">
+            <div class="question">
+                <p>1. La niña pasea al gato</p>
+                <button onclick="checkAnswer(0, false)">Falso</button>
+                <button onclick="checkAnswer(0, true)">Verdadero</button>
+                <p class="result" id="result0"></p>
+            </div>
+
+            <div class="question">
+                <p>2. Hay dos pájaros cantando</p>
+                <button onclick="checkAnswer(1, true)">Verdadero</button>
+                <button onclick="checkAnswer(1, false)">Falso</button>
+                <p class="result" id="result1"></p>
+            </div>
+
+            <div class="question">
+                <p>3. Están en la ciudad</p>
+                <button onclick="checkAnswer(2, false)">Falso</button>
+                <button onclick="checkAnswer(2, true)">Verdadero</button>
+                <p class="result" id="result2"></p>
+            </div>
+
+            <div class="question">
+                <p>4. Hay un estanque con patos</p>
+                <button onclick="checkAnswer(3, true)">Verdadero</button>
+                <button onclick="checkAnswer(3, false)">Falso</button>
+                <p class="result" id="result3"></p>
+            </div>
+
+            <div class="question">
+                <p>5. El perro mira los pájaros</p>
+                <button onclick="checkAnswer(4, true)">Verdadero</button>
+                <button onclick="checkAnswer(4, false)">Falso</button>
+                <p class="result" id="result4"></p>
+            </div>
+
+            <div class="question">
+                <p>6. El niño lleva gafas</p>
+                <button onclick="checkAnswer(5, false)">Falso</button>
+                <button onclick="checkAnswer(5, true)">Verdadero</button>
+                <p class="result" id="result5"></p>
+            </div>
+
+            <div class="question">
+                <p>7. Hay 4 perros en el parque</p>
+                <button onclick="checkAnswer(6, false)">Falso</button>
+                <button onclick="checkAnswer(6, true)">Verdadero</button>
+                <p class="result" id="result6"></p>
+            </div>
+
+            <div class="question">
+                <p>8. Niños juegan en el tobogán</p>
+                <button onclick="checkAnswer(7, false)">Falso</button>
+                <button onclick="checkAnswer(7, true)">Verdadero</button>
+                <p class="result" id="result7"></p>
+            </div>
+
+            <div class="question">
+                <p>9. Está lloviendo</p>
+                <button onclick="checkAnswer(8, false)">Falso</button>
+                <button onclick="checkAnswer(8, true)">Verdadero</button>
+                <p class="result" id="result8"></p>
+            </div>
+
+            <div class="question">
+                <p>10. Hay coches</p>
+                <button onclick="checkAnswer(9, false)">Falso</button>
+                <button onclick="checkAnswer(9, true)">Verdadero</button>
+                <p class="result" id="result9"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Act8.js"></script>
+</body>
+</html>

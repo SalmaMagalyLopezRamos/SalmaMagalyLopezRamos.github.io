@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio de Lectoescritura</title>
+  <link rel="stylesheet" href="Act6.css">
+</head>
+<body>
+  <!-- Botón para volver a la página Actividades.html -->
+  <a href="Actividades.html">
+    <button class="back-button">Volver a Actividades</button>
+  </a>
+
+  <div class="container">
+    <h1>Ejercicio de Lectoescritura</h1>
+
+    <!-- Oración 1 -->
+    <div class="exercise">
+      <div class="question">
+        <img src="images/n1.jpg" alt="Niño jugando con pelota">
+        <p>El <span class="blank" id="blank1">______</span> corre con la <span class="blank" id="blank2">______</span>.</p>
+      </div>
+      <div class="options">
+        <button onclick="checkAnswer(1, 'a')">a) niño, pelota</button>
+        <button onclick="checkAnswer(1, 'b')">b) perro, hueso</button>
+        <button onclick="checkAnswer(1, 'c')">c) gato, ratón</button>
+        <p id="feedback1"></p>
+      </div>
+    </div>
+  
+    <!-- Oración 2 -->
+    <div class="exercise">
+      <div class="question">
+        <img src="images/n2.jpg" alt="Sol brillando en el cielo">
+        <p>El <span class="blank" id="blank3">______</span> brilla en el <span class="blank" id="blank4">______</span>.</p>
+      </div>
+      <div class="options">
+        <button onclick="checkAnswer(2, 'a')">a) sol, cielo</button>
+        <button onclick="checkAnswer(2, 'b')">b) luna, noche</button>
+        <button onclick="checkAnswer(2, 'c')">c) estrella, día</button>
+        <p id="feedback2"></p>
+      </div>
+    </div>
+  
+    <!-- Oración 3 -->
+    <div class="exercise">
+      <div class="question">
+        <img src="images/n3.jpg" alt="Gato jugando con lana">
+        <p>El <span class="blank" id="blank5">______</span> juega con la <span class="blank" id="blank6">______</span>.</p>
+      </div>
+      <div class="options">
+        <button onclick="checkAnswer(3, 'a')">a) perro, pelota</button>
+        <button onclick="checkAnswer(3, 'b')">b) gato, lana</button>
+        <button onclick="checkAnswer(3, 'c')">c) niño, coche</button>
+        <p id="feedback3"></p>
+      </div>
+    </div>
+  
+    <!-- Oración 4 -->
+    <div class="exercise">
+      <div class="question">
+        <img src="images/n4.jpg" alt="Árbol con hojas">
+        <p>El <span class="blank" id="blank7">______</span> tiene muchas <span class="blank" id="blank8">______</span>.</p>
+      </div>
+      <div class="options">
+        <button onclick="checkAnswer(4, 'a')">a) árbol, hojas</button>
+        <button onclick="checkAnswer(4, 'b')">b) perro, huesos</button>
+        <button onclick="checkAnswer(4, 'c')">c) sol, nubes</button>
+        <p id="feedback4"></p>
+      </div>
+    </div>
+  
+    <!-- Oración 5 -->
+    <div class="exercise">
+      <div class="question">
+        <img src="images/n5.jpg" alt="Luna en la noche">
+        <p>La <span class="blank" id="blank9">______</span> brilla en la <span class="blank" id="blank10">______</span>.</p>
+      </div>
+      <div class="options">
+        <button onclick="checkAnswer(5, 'a')">a) luna, noche</button>
+        <button onclick="checkAnswer(5, 'b')">b) estrella, día</button>
+        <button onclick="checkAnswer(5, 'c')">c) sol, cielo</button>
+        <p id="feedback5"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="Act6.js"></script>
+</body>
+</html>
