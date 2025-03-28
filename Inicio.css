@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('Fondo1.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 150vh; /* Aumentamos la altura para permitir el scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.box {
+    position: relative;
+    width: 20%;
+    height: 50px;
+    background-color: rgb(154, 217, 234);
+    border: none;
+    margin: 70px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    left: -170px;
+    top: -210px;
+}
+
+.button { 
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(154, 217, 234);
+    border: 10px solid rgb(112, 146, 191); /* Borde grueso azul marino */
+    padding: 15px 140px; /* Botón más ancho */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* Estilos para los enlaces en el pie de página */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.footer a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
